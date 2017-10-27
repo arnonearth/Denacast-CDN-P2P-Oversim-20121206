@@ -24,9 +24,9 @@ INETMANET-2.0 version, Notes
 The directory of Oversim must be in the same directory that the inetmanet directory.
 
 -inetmanet-2.0
-*
 -OverSim
 
+*Important the name the folder name of inetmanet must be set to inetmanet-2.0
 
 The Inetmanet version uses Uint128 for store the Keys, this avoid the use of gmp library, but limits the key size to 128 bits
 If you need bigger keys you can use the gmp library if you include "#define USEGMP" in the file OverlayKey.h
