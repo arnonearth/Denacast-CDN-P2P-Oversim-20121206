@@ -82,7 +82,7 @@ void SimpleMesh::initializeOverlay(int stage)
 
 void SimpleMesh::joinOverlay()
 {
-	trackerAddress  = *globalNodeList->getRandomAliveNode(0);
+	trackerAddress  = *globalNodeList->getRandomAliveNode(0,0);
 	remainNotificationTimer = new cMessage ("remainNotificationTimer");
 	scheduleAt(simTime()+neighborNotificationPeriod,remainNotificationTimer);
 	std::stringstream ttString;
